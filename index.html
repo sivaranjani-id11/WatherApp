@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHER APP - Easy Tutorial</title>
+
+    <!-- Links the external CSS file for styling -->
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- Main container for the weather app -->
+    <div class="card">
+        <!-- Search Section: Contains input field and search button -->
+        <div class="search">
+            
+            <input type="text" placeholder="Enter city name" spellcheck="false">
+            
+            <button><img src="images/search.png" alt="Search"></button>
+        </div>
+
+       
+        <div class="error">
+            <p>Invalid City Name</p>
+        </div>
+
+        <!-- Weather Section: Displays current weather data -->
+        <div class="weather">
+            
+            <img src="images/rain.png" class="weather-icon" alt="Weather Icon">
+            
+            <h1 class="temp">22°C</h1>
+           
+            <h2 class="city">New York</h2>
+
+            <!-- Weather Details Section -->
+            <div class="details">
+                <!-- Column for Humidity -->
+                <div class="col">
+                    <!-- Humidity icon -->
+                    <img src="images/humidity.png" alt="Humidity Icon">
+                    <!-- Displays humidity percentage -->
+                    <p class="humidity">50%</p>
+                    <p>Humidity</p>
+                </div>
+                <!-- Column for Wind Speed -->
+                <div class="col">
+                    <!-- Wind speed icon -->
+                    <img src="images/wind.png" alt="Wind Icon">
+                    <!-- Displays wind speed -->
+                    <p class="wind">15km/h</p>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript file link: Adds interactivity and fetches weather data -->
+    <script src="script.js"></script>
+</body>
+</html>
