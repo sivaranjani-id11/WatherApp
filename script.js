@@ -36,7 +36,7 @@ async function checkWeather(city) {
         } else if (data.weather[0].main == "Drizzle") {
             WeatherIcon.src = "images/drizzle.png";
         } else if (data.weather[0].main == "Mist") {
-            WeatherIcon.src = "images/Thunder.png";
+            WeatherIcon.src = "images/mist.png";
         }
 
         // Show weather details and hide error message
